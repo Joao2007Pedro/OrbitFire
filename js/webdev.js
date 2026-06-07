@@ -365,3 +365,4 @@
     successDiv.style.display = 'none';
   });
 })();
+// Validação do formulário de alertas: Expressão Regular para e-mail e tratamento de erros
