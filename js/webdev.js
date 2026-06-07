@@ -367,3 +367,5 @@
 })();
 // Validação do formulário de alertas: Expressão Regular para e-mail e tratamento de erros
 // Validação
+
+// Podemos adicionar mais funcionalidades como envio real para um servidor, integração com APIs de monitoramento, etc.
