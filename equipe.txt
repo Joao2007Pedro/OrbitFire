@@ -1,0 +1,13 @@
+EQUIPE — OrbitFire
+Global Solution 2026 · FIAP · Engenharia de Software · 1º Ano
+Web Development · Prof. Israel Marques
+
+─────────────────────────────────────────
+PREENCHA COM SEUS DADOS:
+
+Nome Completo: 
+RM: 
+
+─────────────────────────────────────────
+Link do Repositório GitHub (Organização):
+https://github.com/ORG_NOME/orbitfire-webdev
