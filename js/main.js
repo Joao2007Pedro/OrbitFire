@@ -43,3 +43,4 @@ window.addEventListener('scroll', () => {
       : '';
   });
 });
+// Logica de alternancia e localStorage
