@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OrbitFire — Monitoramento de Queimadas via Satélite</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════ NAV ═══════════════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">
+      <span class="nav__icon">🛰️</span>
+      <span class="nav__name">OrbitFire</span>
+    </div>
+    <ul class="nav__links">
+      <li><a href="#problema">Problema</a></li>
+      <li><a href="#tecnologia">Tecnologia</a></li>
+      <li><a href="#objetivos">Objetivos</a></li>
+      <li><a href="#publico">Público</a></li>
+      <li><a href="#beneficios">Benefícios</a></li>
+      <li><a href="#aplicacao">Aplicação</a></li>
+    </ul>
+    <button class="nav__cta">Acesse a Plataforma</button>
+  </nav>
+
+  <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+  <header class="hero">
+    <div class="hero__grid-bg"></div>
+    <div class="hero__orbs">
+      <div class="orb orb--1"></div>
+      <div class="orb orb--2"></div>
+      <div class="orb orb--3"></div>
+    </div>
+    <div class="hero__content">
+      <div class="hero__badge">
+        <span class="badge__dot"></span>
+        MONITORAMENTO EM TEMPO REAL
+      </div>
+      <h1 class="hero__title">
+        O fogo não<br />
+        <em>espera.</em><br />
+        <span class="hero__title--accent">Você também não.</span>
+      </h1>
+      <p class="hero__sub">
+        OrbitFire integra dados satelitais da <strong>NASA</strong> e do <strong>INPE</strong>
+        para detectar focos de queimadas em menos de 30 minutos e alertar quem precisa saber.
+      </p>
+      <div class="hero__actions">
+        <a href="#problema" class="btn btn--primary">Ver a Solução</a>
+        <a href="#tecnologia" class="btn btn--ghost">Como funciona →</a>
+      </div>
+    </div>
+    <div class="hero__stats">
+      <div class="stat">
+        <span class="stat__num">200k+</span>
+        <span class="stat__label">focos/ano no Brasil</span>
+      </div>
+      <div class="stat__divider"></div>
+      <div class="stat">
+        <span class="stat__num">&lt; 30min</span>
+        <span class="stat__label">tempo de alerta</span>
+      </div>
+      <div class="stat__divider"></div>
+      <div class="stat">
+        <span class="stat__num">375m</span>
+        <span class="stat__label">resolução orbital</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════════════ S1: PROBLEMA ═══════════════════════════ -->
+    <section class="section section--dark" id="problema">
+      <div class="section__inner">
+        <div class="section__label">01 / PROBLEMA</div>
+        <div class="problema__layout">
+          <div class="problema__text">
+            <h2 class="section__title">O Brasil queima.<br />Os alertas chegam tarde.</h2>
+            <p>
+              Mais de <strong>195.000 focos</strong> de incêndio foram registrados em 2023.
+              Os dados satelitais existem — mas estão fragmentados em múltiplos portais difíceis de usar.
+            </p>
+            <p>
+              Agricultores, brigadistas e gestores ficam sabendo dos incêndios pela mídia,
+              <strong>horas depois</strong> de o fogo já ter se alastrado.
+            </p>
+          </div>
+          <div class="problema__cards">
+            <div class="problem-card">
+              <span class="problem-card__icon">🔥</span>
+              <strong>R$ 12 bi</strong>
+              <span>em perdas agropecuárias anuais</span>
+            </div>
+            <div class="problem-card">
+              <span class="problem-card__icon">⏱️</span>
+              <strong>+4 horas</strong>
+              <span>tempo médio até notificação</span>
+            </div>
+            <div class="problem-card">
+              <span class="problem-card__icon">🌍</span>
+              <strong>3 biomas</strong>
+              <span>Cerrado, Amazônia e Pantanal em risco</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ S2: TECNOLOGIA ═══════════════════════════ -->
+    <section class="section section--light" id="tecnologia">
+      <div class="section__inner">
+        <div class="section__label">02 / TECNOLOGIA</div>
+        <h2 class="section__title">Dados do espaço.<br />Decisões na Terra.</h2>
+        <div class="tech__grid">
+          <div class="tech-card">
+            <div class="tech-card__num">01</div>
+            <h3>Satélites NASA &amp; INPE</h3>
+            <p>Terra, Aqua e CBERS-4A detectam anomalias térmicas com resolução de 375m, cobrindo todo o território nacional.</p>
+          </div>
+          <div class="tech-card tech-card--accent">
+            <div class="tech-card__num">02</div>
+            <h3>API FIRMS + BDQueimadas</h3>
+            <p>Integração direta com as APIs abertas da NASA e do INPE, atualizadas a cada 30 minutos automaticamente.</p>
+          </div>
+          <div class="tech-card">
+            <div class="tech-card__num">03</div>
+            <h3>Motor de Análise de Risco</h3>
+            <p>Modelo matemático exponencial cruza temperatura, umidade e direção do vento para prever propagação em tempo real.</p>
+          </div>
+          <div class="tech-card tech-card--accent">
+            <div class="tech-card__num">04</div>
+            <h3>Alertas Proativos</h3>
+            <p>Sistema de notificações por e-mail e SMS dispara automaticamente quando um foco é detectado na área cadastrada.</p>
+          </div>
+        </div>
+        <div class="tech__stack">
+          <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Python</span>
+          <span>Arduino/C++</span><span>NASA FIRMS API</span><span>INPE BDQueimadas</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ S3: OBJETIVOS ═══════════════════════════ -->
+    <section class="section section--fire" id="objetivos">
+      <div class="section__inner">
+        <div class="section__label">03 / OBJETIVOS</div>
+        <h2 class="section__title">O que o OrbitFire<br />pretende resolver.</h2>
+        <div class="obj__list">
+          <div class="obj-item">
+            <span class="obj-item__num">01</span>
+            <div>
+              <h3>Reduzir o tempo de alerta</h3>
+              <p>De horas para menos de 30 minutos entre a detecção orbital e a notificação do usuário.</p>
+            </div>
+          </div>
+          <div class="obj-item">
+            <span class="obj-item__num">02</span>
+            <div>
+              <h3>Centralizar dados satelitais</h3>
+              <p>Unificar NASA FIRMS e INPE BDQueimadas em uma única interface acessível e interpretável.</p>
+            </div>
+          </div>
+          <div class="obj-item">
+            <span class="obj-item__num">03</span>
+            <div>
+              <h3>Democratizar o acesso à informação</h3>
+              <p>Tornar dados orbitais complexos compreensíveis para agricultores, brigadistas e gestores públicos.</p>
+            </div>
+          </div>
+          <div class="obj-item">
+            <span class="obj-item__num">04</span>
+            <div>
+              <h3>Apoiar decisões de combate</h3>
+              <p>Fornecer análise preditiva de propagação para que brigadas saibam onde atuar antes do fogo chegar.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ S4: PÚBLICO ═══════════════════════════ -->
+    <section class="section section--dark" id="publico">
+      <div class="section__inner">
+        <div class="section__label">04 / PÚBLICO-ALVO</div>
+        <h2 class="section__title">Feito para quem<br />está na linha de frente.</h2>
+        <div class="audience__grid">
+          <div class="audience-card">
+            <div class="audience-card__avatar">🚒</div>
+            <h3>Brigadistas &amp; Bombeiros</h3>
+            <p>Precisam de coordenadas precisas e análise de propagação para mobilizar equipes com antecedência.</p>
+          </div>
+          <div class="audience-card audience-card--highlight">
+            <div class="audience-card__avatar">🌾</div>
+            <h3>Agricultores</h3>
+            <p>Monitoram propriedades rurais e recebem alertas quando focos são detectados em raio definido por eles.</p>
+          </div>
+          <div class="audience-card">
+            <div class="audience-card__avatar">🏛️</div>
+            <h3>Órgãos de Defesa Civil</h3>
+            <p>Acessam relatórios consolidados e dashboards para tomada de decisão e prestação de contas.</p>
+          </div>
+          <div class="audience-card">
+            <div class="audience-card__avatar">🔬</div>
+            <h3>Pesquisadores Ambientais</h3>
+            <p>Exploram histórico de queimadas por bioma, período e intensidade para análises científicas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ S5: BENEFÍCIOS ═══════════════════════════ -->
+    <section class="section section--light" id="beneficios">
+      <div class="section__inner">
+        <div class="section__label">05 / BENEFÍCIOS</div>
+        <h2 class="section__title">Menos dano.<br />Mais controle.</h2>
+        <div class="benefits__layout">
+          <div class="benefits__big">
+            <div class="big-benefit">
+              <span>🛰️</span>
+              <h3>Monitoramento 24/7</h3>
+              <p>Cobertura contínua de todo o território nacional sem necessidade de infraestrutura física no campo.</p>
+            </div>
+          </div>
+          <div class="benefits__list">
+            <div class="benefit-row">
+              <span class="benefit-row__icon">⚡</span>
+              <div>
+                <strong>Alertas em tempo real</strong>
+                <p>Notificações automáticas antes que o fogo se alastre.</p>
+              </div>
+            </div>
+            <div class="benefit-row">
+              <span class="benefit-row__icon">📊</span>
+              <div>
+                <strong>Análise preditiva</strong>
+                <p>Modelo matemático prevê trajetória de propagação com base em dados meteorológicos.</p>
+              </div>
+            </div>
+            <div class="benefit-row">
+              <span class="benefit-row__icon">🗂️</span>
+              <div>
+                <strong>Relatórios automáticos</strong>
+                <p>Documentação de ocorrências gerada automaticamente para órgãos competentes.</p>
+              </div>
+            </div>
+            <div class="benefit-row">
+              <span class="benefit-row__icon">🌐</span>
+              <div>
+                <strong>Dados abertos, gratuitos</strong>
+                <p>Integração com APIs públicas da NASA e INPE — sem custo de aquisição de imagens.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ S6: APLICAÇÃO ═══════════════════════════ -->
+    <section class="section section--dark" id="aplicacao">
+      <div class="section__inner">
+        <div class="section__label">06 / APLICAÇÃO NO DIA A DIA</div>
+        <h2 class="section__title">Na prática,<br />assim funciona.</h2>
+        <div class="flow__steps">
+          <div class="flow-step">
+            <div class="flow-step__num">1</div>
+            <div class="flow-step__content">
+              <h3>Satélite detecta foco</h3>
+              <p>Terra/Aqua (NASA) identifica anomalia térmica. CBERS-4A (INPE) confirma localização.</p>
+            </div>
+          </div>
+          <div class="flow-step__arrow">→</div>
+          <div class="flow-step">
+            <div class="flow-step__num">2</div>
+            <div class="flow-step__content">
+              <h3>OrbitFire processa</h3>
+              <p>API coleta o dado, calcula risco de propagação e verifica usuários cadastrados na região.</p>
+            </div>
+          </div>
+          <div class="flow-step__arrow">→</div>
+          <div class="flow-step">
+            <div class="flow-step__num">3</div>
+            <div class="flow-step__content">
+              <h3>Alerta é disparado</h3>
+              <p>E-mail e SMS chegam ao agricultor, brigadista ou gestor em menos de 30 minutos.</p>
+            </div>
+          </div>
+          <div class="flow-step__arrow">→</div>
+          <div class="flow-step">
+            <div class="flow-step__num">4</div>
+            <div class="flow-step__content">
+              <h3>Ação imediata</h3>
+              <p>Com mapa e análise em mãos, a equipe parte para o ponto exato antes que o fogo avance.</p>
+            </div>
+          </div>
+        </div>
+        <div class="aplicacao__ods">
+          <span>ODS 13 — Ação Climática</span>
+          <span>ODS 15 — Vida Terrestre</span>
+          <span>ODS 2 — Fome Zero</span>
+          <span>ODS 9 — Inovação</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════ SLIDESHOW ═══════════════════════════ -->
+  <section class="section section--light" id="galeria">
+    <div class="section__inner">
+      <div class="section__label">GALERIA</div>
+      <h2 class="section__title">OrbitFire em ação.</h2>
+      <div class="slideshow" id="slideshow">
+        <div class="slideshow__track" id="slideshowTrack">
+          <div class="slide active">
+            <div class="slide__img slide__img--1">
+              <div class="slide__overlay">
+                <span class="slide__tag">NASA FIRMS API</span>
+                <h3>Mapa de Focos Ativos</h3>
+                <p>Dados satelitais em tempo real cobrindo todo o território nacional com resolução de 375m.</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide__img slide__img--2">
+              <div class="slide__overlay">
+                <span class="slide__tag">ANÁLISE DE RISCO</span>
+                <h3>Modelo Preditivo de Propagação</h3>
+                <p>Função exponencial calcula trajetória do fogo com base em temperatura, umidade e vento.</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide__img slide__img--3">
+              <div class="slide__overlay">
+                <span class="slide__tag">EDGE COMPUTING</span>
+                <h3>Sensor Embarcado Arduino</h3>
+                <p>Circuito com DHT22 e MQ-2 detecta temperatura, umidade e fumaça em campo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="slide__btn slide__btn--prev" id="slidePrev" aria-label="Slide anterior">&#8592;</button>
+        <button class="slide__btn slide__btn--next" id="slideNext" aria-label="Próximo slide">&#8594;</button>
+        <div class="slideshow__dots" id="slideDots">
+          <button class="dot active" data-index="0" aria-label="Slide 1"></button>
+          <button class="dot" data-index="1" aria-label="Slide 2"></button>
+          <button class="dot" data-index="2" aria-label="Slide 3"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ TEMA ═══════════════════════════ -->
+  <div class="theme-switcher" id="themeSwitcher">
+    <span class="theme-switcher__label">Tema</span>
+    <button class="theme-btn theme-btn--dark active"  data-theme="dark"   aria-label="Tema escuro">🌑</button>
+    <button class="theme-btn theme-btn--fire"         data-theme="fire"   aria-label="Tema fogo">🔥</button>
+    <button class="theme-btn theme-btn--orbit"        data-theme="orbit"  aria-label="Tema órbita">🌐</button>
+  </div>
+
+  <!-- ═══════════════════════════ QUIZ ═══════════════════════════ -->
+  <section class="section section--dark" id="quiz">
+    <div class="section__inner">
+      <div class="section__label">QUIZ</div>
+      <h2 class="section__title">Teste seu conhecimento<br />sobre queimadas e satélites.</h2>
+      <div class="quiz-wrapper" id="quizWrapper">
+        <div class="quiz-progress">
+          <div class="quiz-progress__bar">
+            <div class="quiz-progress__fill" id="quizProgressFill"></div>
+          </div>
+          <span class="quiz-progress__label" id="quizProgressLabel">Pergunta 1 de 10</span>
+        </div>
+        <div class="quiz-card" id="quizCard">
+          <p class="quiz-question" id="quizQuestion"></p>
+          <div class="quiz-options" id="quizOptions"></div>
+        </div>
+        <div class="quiz-result" id="quizResult" style="display:none">
+          <div class="quiz-result__icon" id="quizResultIcon"></div>
+          <h3 id="quizResultTitle"></h3>
+          <p id="quizResultText"></p>
+          <div class="quiz-result__score" id="quizResultScore"></div>
+          <button class="btn btn--primary" id="quizRestart">Jogar novamente</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ FORMULÁRIO ═══════════════════════════ -->
+  <section class="section section--light" id="contato">
+    <div class="section__inner">
+      <div class="section__label">CADASTRO DE ALERTAS</div>
+      <h2 class="section__title">Receba alertas<br />na sua região.</h2>
+      <div class="form-wrapper">
+        <form class="alert-form" id="alertForm" novalidate>
+          <div class="form-row">
+            <div class="form-group" id="fg-nome">
+              <label for="nome">Nome completo</label>
+              <input type="text" id="nome" name="nome" placeholder="Ex: João Silva" autocomplete="name" />
+              <span class="form-error" id="err-nome"></span>
+            </div>
+            <div class="form-group" id="fg-email">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="Ex: joao@email.com" autocomplete="email" />
+              <span class="form-error" id="err-email"></span>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group" id="fg-estado">
+              <label for="estado">Estado</label>
+              <select id="estado" name="estado">
+                <option value="">Selecione seu estado</option>
+                <option>Acre</option><option>Alagoas</option><option>Amapá</option>
+                <option>Amazonas</option><option>Bahia</option><option>Ceará</option>
+                <option>Distrito Federal</option><option>Espírito Santo</option>
+                <option>Goiás</option><option>Maranhão</option><option>Mato Grosso</option>
+                <option>Mato Grosso do Sul</option><option>Minas Gerais</option>
+                <option>Pará</option><option>Paraíba</option><option>Paraná</option>
+                <option>Pernambuco</option><option>Piauí</option>
+                <option>Rio de Janeiro</option><option>Rio Grande do Norte</option>
+                <option>Rio Grande do Sul</option><option>Rondônia</option>
+                <option>Roraima</option><option>Santa Catarina</option>
+                <option>São Paulo</option><option>Sergipe</option><option>Tocantins</option>
+              </select>
+              <span class="form-error" id="err-estado"></span>
+            </div>
+            <div class="form-group" id="fg-raio">
+              <label for="raio">Raio de monitoramento</label>
+              <select id="raio" name="raio">
+                <option value="">Selecione o raio</option>
+                <option value="25">25 km</option>
+                <option value="50">50 km</option>
+                <option value="100">100 km</option>
+                <option value="200">200 km</option>
+              </select>
+              <span class="form-error" id="err-raio"></span>
+            </div>
+          </div>
+          <div class="form-group form-group--full" id="fg-canal">
+            <label>Canal de alerta</label>
+            <div class="form-checkboxes">
+              <label class="checkbox-label">
+                <input type="checkbox" name="canal" value="email" /> E-mail
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="canal" value="sms" /> SMS
+              </label>
+            </div>
+            <span class="form-error" id="err-canal"></span>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full" id="formSubmit">
+            Cadastrar Alerta
+          </button>
+        </form>
+        <div class="form-success" id="formSuccess" style="display:none">
+          <span>✅</span>
+          <h3>Cadastro realizado!</h3>
+          <p>Você receberá alertas de queimadas na sua região em menos de 30 minutos após detecção orbital.</p>
+          <button class="btn btn--ghost" id="formReset">Cadastrar outro</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="nav__icon">🛰️</span>
+        <span>OrbitFire</span>
+      </div>
+      <p class="footer__tagline">Dados do espaço. Proteção na Terra.</p>
+      <p class="footer__course">Global Solution 2026 · FIAP – Engenharia de Software · 1º Ano</p>
+      <!-- Substitua pelos seus dados reais -->
+      <div class="footer__team">
+        <span>SEU_NOME · RM000000</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/webdev.js"></script>
+</body>
+</html>
